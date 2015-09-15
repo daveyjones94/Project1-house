@@ -1,7 +1,6 @@
 Project "house"
-Authors: Michael Kšlling and David J. Barnes
-
-This project is part of the material for the book
+Authors: David Martinez
+I'm going to try to draw someone with a santa hat.
 
    Objects First with Java - A Practical Introduction using BlueJ
    Fifth edition
