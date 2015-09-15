@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Person dude;
 
     /**
      * Constructor for objects of class Picture
@@ -30,30 +31,39 @@ public class Picture
     public void draw()
     {
         wall = new Square();
-        wall.moveHorizontal(-140);
-        wall.moveVertical(20);
-        wall.changeSize(120);
+        wall.changeColor("green");
+        wall.moveHorizontal(-310);
+        wall.moveVertical(100);
+        wall.changeSize(500);
         wall.makeVisible();
         
         window = new Square();
-        window.changeColor("black");
-        window.moveHorizontal(-120);
-        window.moveVertical(40);
-        window.changeSize(40);
+        window.changeColor("blue");
+        window.moveHorizontal(-320);
+        window.moveVertical(-420);
+        window.changeSize(520);
         window.makeVisible();
 
-        roof = new Triangle();  
-        roof.changeSize(60, 180);
-        roof.moveHorizontal(20);
-        roof.moveVertical(-60);
+        roof = new Triangle();
+        roof.changeColor("yellow");
+        roof.changeSize(20, 40);
+        roof.moveHorizontal(60);
+        roof.moveVertical(80);
         roof.makeVisible();
 
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveVertical(0);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        dude = new Person();
+        dude.changeColor("magenta");
+        dude.moveHorizontal(0);
+        dude.moveVertical(0);
+        dude.changeSize(60, 30);
+        dude.makeVisible();
     }
 
     /**
@@ -77,8 +87,8 @@ public class Picture
     {
         if (wall != null)   // only if it's painted already...
         {
-            wall.changeColor("red");
-            window.changeColor("black");
+            wall.changeColor("green");
+            window.changeColor("blue");
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
