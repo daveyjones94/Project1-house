@@ -1,0 +1,29 @@
+default square position: 	(310,	120)
+sky position:			(0,	-350)
+sky size:			550 px
+ground position:		(0,	200)
+ground size:			550 px
+trunk position:			(-170,	0)
+trunk2 position:		(430,	0)
+trunk size:			200 px
+
+default circle position:	(230,	90)
+leaves position:		(-90,	-110)
+leaves2 position:		(380,	-110)
+leaves diameter:		200 px
+bush1 position:			(150,	130)
+bush1 size:			150 px
+bush2 position:			(250,	150)
+bush2 size:			68 px
+
+default person position:	(280, 	190)
+link's position:		(400,	180)
+link's size:			(40,	20)
+
+default triangle position:	(210,	140)
+hat position:			(400,	155)
+hat size:			(15,	10)
+tf1 position:			(460,	140)
+tf2 position:			(450,	160)
+tf3 position:			(470,	160)
+tf size:			(20,	20)

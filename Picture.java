@@ -11,11 +11,19 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
-    private Person dude;
+    private Square sky;
+    private Square ground;
+    private Square trunk;
+    private Square trunk2;
+    private Circle leaves;
+    private Circle leaves2;
+    private Circle bush1;
+    private Circle bush2;
+    private Person link;
+    private Triangle hat;
+    private Triangle tf1;
+    private Triangle tf2;
+    private Triangle tf3;
 
     /**
      * Constructor for objects of class Picture
@@ -30,40 +38,96 @@ public class Picture
      */
     public void draw()
     {
-        wall = new Square();
-        wall.changeColor("green");
-        wall.moveHorizontal(-310);
-        wall.moveVertical(100);
-        wall.changeSize(500);
-        wall.makeVisible();
+        sky = new Square();
+        sky.changeColor("blue");
+        sky.moveHorizontal(-310);
+        sky.moveVertical(-470);
+        sky.changeSize(550);
+        sky.makeVisible();
         
-        window = new Square();
-        window.changeColor("blue");
-        window.moveHorizontal(-320);
-        window.moveVertical(-420);
-        window.changeSize(520);
-        window.makeVisible();
-
-        roof = new Triangle();
-        roof.changeColor("yellow");
-        roof.changeSize(20, 40);
-        roof.moveHorizontal(60);
-        roof.moveVertical(80);
-        roof.makeVisible();
-
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(0);
-        sun.changeSize(80);
-        sun.makeVisible();
+        ground = new Square();
+        ground.changeColor("green");
+        ground.moveHorizontal(-310);
+        ground.moveVertical(80);
+        ground.changeSize(550);
+        ground.makeVisible();
         
-        dude = new Person();
-        dude.changeColor("magenta");
-        dude.moveHorizontal(0);
-        dude.moveVertical(0);
-        dude.changeSize(60, 30);
-        dude.makeVisible();
+        trunk = new Square();
+        trunk.changeColor("black");
+        trunk.moveHorizontal(-480);
+        trunk.moveVertical(-120);
+        trunk.changeSize(200);
+        trunk.makeVisible();
+        
+        trunk2 = new Square();
+        trunk2.changeColor("black");
+        trunk2.moveHorizontal(120);
+        trunk2.moveVertical(-120);
+        trunk2.changeSize(200);
+        trunk2.makeVisible();
+
+        leaves = new Circle();
+        leaves.changeColor("green");
+        leaves.moveHorizontal(-320);
+        leaves.moveVertical(-200);
+        leaves.changeSize(200);
+        leaves.makeVisible();
+        
+        leaves2 = new Circle();
+        leaves2.changeColor("green");
+        leaves2.moveHorizontal(150);
+        leaves2.moveVertical(-200);
+        leaves2.changeSize(200);
+        leaves2.makeVisible();
+        
+        bush1 = new Circle();
+        bush1.changeColor("green");
+        bush1.moveHorizontal(-80);
+        bush1.moveVertical(40);
+        bush1.changeSize(150);
+        bush1.makeVisible();
+        
+        bush2 = new Circle();
+        bush2.changeColor("green");
+        bush2.moveHorizontal(20);
+        bush2.moveVertical(60);
+        bush2.changeSize(68);
+        bush2.makeVisible();
+        
+        link = new Person();
+        link.changeColor("black");
+        link.moveHorizontal(120);
+        link.moveVertical(-10);
+        link.changeSize(40, 20);
+        link.makeVisible();
+        
+        hat = new Triangle();
+        hat.changeColor("green");
+        hat.changeSize(15, 10);
+        hat.moveHorizontal(190);
+        hat.moveVertical(15);
+        hat.makeVisible();
+        
+        tf1 = new Triangle();
+        tf1.changeColor("yellow");
+        tf1.changeSize(20, 20);
+        tf1.moveHorizontal(250);
+        tf1.moveVertical(0);
+        tf1.makeVisible();
+        
+        tf2 = new Triangle();
+        tf2.changeColor("yellow");
+        tf2.changeSize(20, 20);
+        tf2.moveHorizontal(240);
+        tf2.moveVertical(20);
+        tf2.makeVisible();
+        
+        tf3 = new Triangle();
+        tf3.changeColor("yellow");
+        tf3.changeSize(20, 20);
+        tf3.moveHorizontal(260);
+        tf3.moveVertical(20);
+        tf3.makeVisible();
     }
 
     /**
@@ -71,12 +135,22 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        if (wall != null)   // only if it's painted already...
+        if (sky != null)   // only if it's painted already...
         {
-            wall.changeColor("black");
-            window.changeColor("white");
-            roof.changeColor("black");
-            sun.changeColor("black");
+            sky.changeColor("white");
+            ground.changeColor("black");
+            trunk.changeColor("black");
+            trunk2.changeColor("black");
+            leaves.changeColor("black");
+            leaves2.changeColor("black");
+            bush1.changeColor("black");
+            bush2.changeColor("black");
+            link.changeColor("black");
+            hat.changeColor("black");
+            //the golden power glows in the dark, OBVIOUSLY
+            tf1.changeColor("white");
+            tf2.changeColor("white");
+            tf3.changeColor("white");
         }
     }
 
@@ -85,12 +159,21 @@ public class Picture
      */
     public void setColor()
     {
-        if (wall != null)   // only if it's painted already...
+        if (sky != null)   // only if it's painted already...
         {
-            wall.changeColor("green");
-            window.changeColor("blue");
-            roof.changeColor("green");
-            sun.changeColor("yellow");
+            sky.changeColor("blue");
+            ground.changeColor("green");
+            trunk.changeColor("black");
+            trunk2.changeColor("black");
+            leaves.changeColor("green");
+            leaves2.changeColor("green");
+            bush1.changeColor("green");
+            bush2.changeColor("green");
+            link.changeColor("black");
+            hat.changeColor("green");
+            tf1.changeColor("yellow");
+            tf2.changeColor("yellow");
+            tf3.changeColor("yellow");
         }
     }
 }

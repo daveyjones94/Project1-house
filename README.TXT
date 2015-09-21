@@ -1,6 +1,7 @@
 Project "house"
 Authors: David Martinez
-I'm going to try to draw someone with a santa hat.
+Our hero, Link, finds the Triforce, the Golden Powers, deep in the woods, saving Hyrule from the
+clutches of the evil Ganondorf.
 
    Objects First with Java - A Practical Introduction using BlueJ
    Fifth edition
